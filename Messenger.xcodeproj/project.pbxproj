@@ -11,6 +11,8 @@
 		70152E772A7BA592000DAD76 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70152E762A7BA592000DAD76 /* ActiveNowView.swift */; };
 		70152E792A7BA99C000DAD76 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70152E782A7BA99C000DAD76 /* InboxRowView.swift */; };
 		70152E7C2A7BB188000DAD76 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70152E7B2A7BB188000DAD76 /* NewMessageView.swift */; };
+		70152E812A7BBA30000DAD76 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70152E802A7BBA30000DAD76 /* ProfileView.swift */; };
+		70152E832A7BBDA2000DAD76 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70152E822A7BBDA2000DAD76 /* SettingsOptionsViewModel.swift */; };
 		708F1AAA2A75402700587A8E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708F1AA92A75402700587A8E /* RegistrationView.swift */; };
 		70FB966F2A7530170039FF91 /* MessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FB966E2A7530170039FF91 /* MessengerApp.swift */; };
 		70FB96712A7530170039FF91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FB96702A7530170039FF91 /* ContentView.swift */; };
@@ -24,6 +26,8 @@
 		70152E762A7BA592000DAD76 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		70152E782A7BA99C000DAD76 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 		70152E7B2A7BB188000DAD76 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		70152E802A7BBA30000DAD76 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		70152E822A7BBDA2000DAD76 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 		708F1AA92A75402700587A8E /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		70FB966B2A7530170039FF91 /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70FB966E2A7530170039FF91 /* MessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerApp.swift; sourceTree = "<group>"; };
@@ -67,6 +71,31 @@
 				70152E7B2A7BB188000DAD76 /* NewMessageView.swift */,
 			);
 			path = NewMessage;
+			sourceTree = "<group>";
+		};
+		70152E7D2A7BBA00000DAD76 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				70152E7E2A7BBA0A000DAD76 /* View */,
+				70152E7F2A7BBA10000DAD76 /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		70152E7E2A7BBA0A000DAD76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70152E802A7BBA30000DAD76 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		70152E7F2A7BBA10000DAD76 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				70152E822A7BBDA2000DAD76 /* SettingsOptionsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		70FB96622A7530170039FF91 = {
@@ -121,6 +150,7 @@
 				70FB96802A7530BA0039FF91 /* Authentication */,
 				70152E702A7BA322000DAD76 /* Inbox */,
 				70152E7A2A7BB16E000DAD76 /* NewMessage */,
+				70152E7D2A7BBA00000DAD76 /* Profile */,
 				70FB96812A7530C40039FF91 /* Root */,
 			);
 			path = Core;
@@ -236,12 +266,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				70152E792A7BA99C000DAD76 /* InboxRowView.swift in Sources */,
+				70152E812A7BBA30000DAD76 /* ProfileView.swift in Sources */,
 				70152E7C2A7BB188000DAD76 /* NewMessageView.swift in Sources */,
 				70FB96842A7531FA0039FF91 /* LoginView.swift in Sources */,
 				70FB96712A7530170039FF91 /* ContentView.swift in Sources */,
 				70152E722A7BA332000DAD76 /* InboxView.swift in Sources */,
 				70152E772A7BA592000DAD76 /* ActiveNowView.swift in Sources */,
 				70FB966F2A7530170039FF91 /* MessengerApp.swift in Sources */,
+				70152E832A7BBDA2000DAD76 /* SettingsOptionsViewModel.swift in Sources */,
 				708F1AAA2A75402700587A8E /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
