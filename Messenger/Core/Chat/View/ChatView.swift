@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChatView: View {
     @StateObject private var viewModel: ChatViewModel
-    let user: User
+    let user: User 
     
     init(user: User) {
         self.user = user
@@ -35,8 +35,8 @@ struct ChatView: View {
                 }
                 
                 // Messages
-                ForEach(0 ... 15, id: \.self) { messages in
-                    ChatMessageCell(isFromCurrentUser: Bool.random())
+                ForEach(viewModel.messages) { messages in
+                    ChatMessageCell(message: messages)
                 }
             }
             // Messages input view
