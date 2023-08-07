@@ -19,6 +19,8 @@
 		70152E8D2A7BD62B000DAD76 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70152E8C2A7BD62B000DAD76 /* ChatView.swift */; };
 		70152E8F2A7BDC17000DAD76 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70152E8E2A7BDC17000DAD76 /* ChatMessageCell.swift */; };
 		70152E912A7BE0B3000DAD76 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70152E902A7BE0B3000DAD76 /* ChatBubble.swift */; };
+		7016E5132A81152D001D8E74 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7016E5122A81152D001D8E74 /* ChatService.swift */; };
+		7016E5182A8116B2001D8E74 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7016E5172A8116B2001D8E74 /* Constants.swift */; };
 		7078B66C2A7D095100581CD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7078B66B2A7D095100581CD9 /* GoogleService-Info.plist */; };
 		7078B6712A7D0A7F00581CD9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7078B6702A7D0A7F00581CD9 /* FirebaseAuth */; };
 		7078B6752A7D0A7F00581CD9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7078B6742A7D0A7F00581CD9 /* FirebaseFirestore */; };
@@ -55,6 +57,8 @@
 		70152E8C2A7BD62B000DAD76 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		70152E8E2A7BDC17000DAD76 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		70152E902A7BE0B3000DAD76 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		7016E5122A81152D001D8E74 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		7016E5172A8116B2001D8E74 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7078B66B2A7D095100581CD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7078B67F2A7D0CA700581CD9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		7078B6812A7D0CBD00581CD9 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
@@ -153,10 +157,27 @@
 		70152E8B2A7BD61E000DAD76 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				7016E5112A811520001D8E74 /* Service */,
 				7078B6982A7E706100581CD9 /* View */,
 				7078B6972A7E705F00581CD9 /* ViewModel */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		7016E5112A811520001D8E74 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7016E5122A81152D001D8E74 /* ChatService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7016E5142A81167D001D8E74 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7016E5172A8116B2001D8E74 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		7078B67A2A7D0AFE00581CD9 /* Frameworks */ = {
@@ -274,6 +295,7 @@
 				70FB967D2A7530940039FF91 /* Core */,
 				70FB967E2A75309A0039FF91 /* Model */,
 				70FB967F2A7530A10039FF91 /* Service */,
+				7016E5142A81167D001D8E74 /* Utils */,
 				70FB96722A7530190039FF91 /* Assets.xcassets */,
 				7078B66B2A7D095100581CD9 /* GoogleService-Info.plist */,
 				70FB96742A7530190039FF91 /* Preview Content */,
@@ -449,9 +471,11 @@
 				70152E8D2A7BD62B000DAD76 /* ChatView.swift in Sources */,
 				7078B6842A7D0CF500581CD9 /* AuthService.swift in Sources */,
 				70FB96712A7530170039FF91 /* ContentView.swift in Sources */,
+				7016E5182A8116B2001D8E74 /* Constants.swift in Sources */,
 				70152E8F2A7BDC17000DAD76 /* ChatMessageCell.swift in Sources */,
 				70152E912A7BE0B3000DAD76 /* ChatBubble.swift in Sources */,
 				70152E8A2A7BD044000DAD76 /* CircularProfileImageView.swift in Sources */,
+				7016E5132A81152D001D8E74 /* ChatService.swift in Sources */,
 				70152E722A7BA332000DAD76 /* InboxView.swift in Sources */,
 				7078B6802A7D0CA700581CD9 /* LoginViewModel.swift in Sources */,
 				7078B6922A7E574B00581CD9 /* NewMessageViewModel.swift in Sources */,
