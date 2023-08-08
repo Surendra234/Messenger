@@ -21,6 +21,10 @@
 		70152E912A7BE0B3000DAD76 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70152E902A7BE0B3000DAD76 /* ChatBubble.swift */; };
 		7016E5132A81152D001D8E74 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7016E5122A81152D001D8E74 /* ChatService.swift */; };
 		7016E5182A8116B2001D8E74 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7016E5172A8116B2001D8E74 /* Constants.swift */; };
+		7016E51B2A811DE7001D8E74 /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7016E51A2A811DE7001D8E74 /* InboxService.swift */; };
+		7016E51E2A8227FE001D8E74 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7016E51D2A8227FE001D8E74 /* Date.swift */; };
+		7016E5222A82438B001D8E74 /* ActiveNowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7016E5212A82438B001D8E74 /* ActiveNowViewModel.swift */; };
+		7016E5252A8248B1001D8E74 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7016E5242A8248B1001D8E74 /* Route.swift */; };
 		7078B66C2A7D095100581CD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7078B66B2A7D095100581CD9 /* GoogleService-Info.plist */; };
 		7078B6712A7D0A7F00581CD9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7078B6702A7D0A7F00581CD9 /* FirebaseAuth */; };
 		7078B6752A7D0A7F00581CD9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7078B6742A7D0A7F00581CD9 /* FirebaseFirestore */; };
@@ -59,6 +63,10 @@
 		70152E902A7BE0B3000DAD76 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		7016E5122A81152D001D8E74 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		7016E5172A8116B2001D8E74 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7016E51A2A811DE7001D8E74 /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
+		7016E51D2A8227FE001D8E74 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		7016E5212A82438B001D8E74 /* ActiveNowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowViewModel.swift; sourceTree = "<group>"; };
+		7016E5242A8248B1001D8E74 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		7078B66B2A7D095100581CD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7078B67F2A7D0CA700581CD9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		7078B6812A7D0CBD00581CD9 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
@@ -97,6 +105,7 @@
 		70152E702A7BA322000DAD76 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
+				7016E5192A811DDB001D8E74 /* Service */,
 				7078B68C2A7E46D400581CD9 /* View */,
 				7078B68B2A7E46D200581CD9 /* ViewModel */,
 			);
@@ -106,7 +115,8 @@
 		70152E732A7BA56D000DAD76 /* ActiveNow */ = {
 			isa = PBXGroup;
 			children = (
-				70152E762A7BA592000DAD76 /* ActiveNowView.swift */,
+				7016E51F2A82436D001D8E74 /* View */,
+				7016E5202A824372001D8E74 /* ViewModel */,
 			);
 			path = ActiveNow;
 			sourceTree = "<group>";
@@ -178,6 +188,46 @@
 				7016E5172A8116B2001D8E74 /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		7016E5192A811DDB001D8E74 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7016E51A2A811DE7001D8E74 /* InboxService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7016E51C2A8227EB001D8E74 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				7016E51D2A8227FE001D8E74 /* Date.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		7016E51F2A82436D001D8E74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70152E762A7BA592000DAD76 /* ActiveNowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7016E5202A824372001D8E74 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7016E5212A82438B001D8E74 /* ActiveNowViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7016E5232A8248A5001D8E74 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				7016E5242A8248B1001D8E74 /* Route.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 		7078B67A2A7D0AFE00581CD9 /* Frameworks */ = {
@@ -293,7 +343,9 @@
 			children = (
 				70FB967C2A75308C0039FF91 /* App */,
 				70FB967D2A7530940039FF91 /* Core */,
+				7016E51C2A8227EB001D8E74 /* Extention */,
 				70FB967E2A75309A0039FF91 /* Model */,
+				7016E5232A8248A5001D8E74 /* Routing */,
 				70FB967F2A7530A10039FF91 /* Service */,
 				7016E5142A81167D001D8E74 /* Utils */,
 				70FB96722A7530190039FF91 /* Assets.xcassets */,
@@ -461,6 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7078B69A2A7E708200581CD9 /* ChatViewModel.swift in Sources */,
+				7016E51E2A8227FE001D8E74 /* Date.swift in Sources */,
 				70152E792A7BA99C000DAD76 /* InboxRowView.swift in Sources */,
 				7078B68E2A7E486700581CD9 /* InboxViewModel.swift in Sources */,
 				7078B6822A7D0CBD00581CD9 /* RegistrationViewModel.swift in Sources */,
@@ -471,6 +524,7 @@
 				70152E8D2A7BD62B000DAD76 /* ChatView.swift in Sources */,
 				7078B6842A7D0CF500581CD9 /* AuthService.swift in Sources */,
 				70FB96712A7530170039FF91 /* ContentView.swift in Sources */,
+				7016E51B2A811DE7001D8E74 /* InboxService.swift in Sources */,
 				7016E5182A8116B2001D8E74 /* Constants.swift in Sources */,
 				70152E8F2A7BDC17000DAD76 /* ChatMessageCell.swift in Sources */,
 				70152E912A7BE0B3000DAD76 /* ChatBubble.swift in Sources */,
@@ -479,12 +533,14 @@
 				70152E722A7BA332000DAD76 /* InboxView.swift in Sources */,
 				7078B6802A7D0CA700581CD9 /* LoginViewModel.swift in Sources */,
 				7078B6922A7E574B00581CD9 /* NewMessageViewModel.swift in Sources */,
+				7016E5252A8248B1001D8E74 /* Route.swift in Sources */,
 				7078B68A2A7E308700581CD9 /* UserService.swift in Sources */,
 				70152E772A7BA592000DAD76 /* ActiveNowView.swift in Sources */,
 				70152E852A7BC39D000DAD76 /* ProfileViewModel.swift in Sources */,
 				70152E872A7BC90C000DAD76 /* User.swift in Sources */,
 				7078B6962A7E69D400581CD9 /* MessageService.swift in Sources */,
 				70FB966F2A7530170039FF91 /* MessengerApp.swift in Sources */,
+				7016E5222A82438B001D8E74 /* ActiveNowViewModel.swift in Sources */,
 				7078B6942A7E681200581CD9 /* Message.swift in Sources */,
 				70152E832A7BBDA2000DAD76 /* SettingsOptionsViewModel.swift in Sources */,
 				708F1AAA2A75402700587A8E /* RegistrationView.swift in Sources */,

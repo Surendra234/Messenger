@@ -23,8 +23,17 @@ class UserService {
         print("DEBUG :- current user in service is \(String(describing: currentUser))")
     }
     
-    static func fetchAllUser() async throws -> [User] {
+    static func fetchAllUser(limit: Int? = nil) async throws -> [User] {
+        let query = FirestoreConstants.UserCollection
+        if let limit { query.limit(to: limit) }
         let snapshot = try await FirestoreConstants.UserCollection.getDocuments()
         return snapshot.documents.compactMap({ try? $0.data(as: User.self)})
+    }
+    
+    static func fetchUser(withUid uid: String, completion: @escaping (User) -> Void) {
+        FirestoreConstants.UserCollection.document(uid).getDocument { snapshot, _ in
+            guard let user = try? snapshot?.data(as: User.self) else { return}
+            completion(user)
+        }
     }
 }

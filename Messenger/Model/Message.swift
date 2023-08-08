@@ -8,7 +8,7 @@
 import Firebase
 import FirebaseFirestoreSwift
 
-struct Message: Identifiable, Codable {
+struct Message: Identifiable, Codable, Hashable {
     @DocumentID var messageId: String?
     
     let fromId: String
@@ -28,5 +28,9 @@ struct Message: Identifiable, Codable {
     
     var isFromCurrentUser: Bool {
         return fromId == Auth.auth().currentUser?.uid
+    }
+    
+    var timestampString: String {
+        return timestamp.dateValue().timestampString()
     }
 }
